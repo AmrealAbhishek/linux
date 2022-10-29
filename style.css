@@ -1,0 +1,67 @@
+body{
+    background: #023845;
+
+height: 900px;
+}
+
+
+
+.box{
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    left: 560px;
+    top: 100px;
+    background-color: #024959;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgba(255,255,0,0);
+    text-align:center;
+    transition: all linear 01s;	
+    box-shadow: inset 0px 0px 80px 5px rgba(0,0,0,0.4), 10px 10px 100px black;
+    color: rgba(255,255,0,0.5);
+}
+
+h1{
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.box::after{
+    position: absolute;
+    height: 105%;
+    left: -2.5%;
+    top:-2.5%;
+    width: 105%;
+    border:1px solid rgba(255,255,0,0.7);
+    content: "";
+    transition: all linear 0.3s;
+}
+
+.box::before{
+    position: absolute;
+    height: 105%;
+    left: -2.5%;
+    top:-2.5%;
+    width: 105%;
+    border:1px solid rgba(255,255,0,0.7);
+    content: "";
+    transition: all linear 0.3s;
+}
+
+
+.box:hover:after{
+    box-shadow: 0px 0px 50px yellow, inset 0px 0px 50px yellow;
+}
+
+.box:hover{
+    color: yellow;
+    box-shadow: inset 0px 0px 80px 5px rgba(0,0,0,0);
+}
+
+.box i{
+    font-size: 100px;
+}
